@@ -11,12 +11,11 @@ class Palindrome {
   }
   check() {
     const textToArr = this.text.toLowerCase().split(" ");
-    textToArr.reduce((acc, val) => {
-      acc = val;
-      const wordToArr = acc.split("");
+    textToArr.map((val) => {
+      const wordToArr = val.split("");
       const reverseArr = wordToArr.reverse();
       const reverseArrToText = reverseArr.join("");
-      acc === reverseArrToText && this.words.push(acc);
+      val === reverseArrToText && this.words.push(val);
     }, {});
   }
   counter() {
