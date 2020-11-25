@@ -10,7 +10,7 @@ class Palindrome {
     this.words = [];
   }
   check() {
-    const textToArr = this.text.toLowerCase().split(" ");
+    const textToArr = this.text.toLowerCase().trim().split(/[^a-z]+/);
     textToArr.map((val) => {
       const wordToArr = val.split("");
       const reverseArr = wordToArr.reverse();

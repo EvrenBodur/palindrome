@@ -38,6 +38,12 @@
   margin-top: 10px;
   color: white;
   border: 1px solid white;
+  cursor: pointer;
+}
+
+.submit:hover {
+  color: #333;
+  background-color: white;
 }
 
 .body {
